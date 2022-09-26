@@ -18,8 +18,8 @@ const AllMovie = ({countIncrease}) => {
         
     return (
         <div>
-               <h2 className='text-4xl font-bold my-8'>All Movie List</h2>
-               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+               <h2 className='text-4xl font-bold my-8'>All Book List</h2>
+               <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-8 gap-y-6'>
          
             {
                 movies.map((movie) => (
@@ -27,7 +27,7 @@ const AllMovie = ({countIncrease}) => {
                     <SingleChar movie={movie} countIncrease={countIncrease}></SingleChar>
                 ))
             }
-        </div>
+            </div>
         </div>
         
     );

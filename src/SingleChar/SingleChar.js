@@ -11,7 +11,7 @@ const SingleChar = (props) => {
     return (
         <div className=''>
             <div className="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src={volumeInfo.imageLinks.thumbnail? volumeInfo.imageLinks.thumbnail: 'Not Found'} alt="" /></figure>
+                <figure><img className='mt-4' src={volumeInfo.imageLinks.thumbnail? volumeInfo.imageLinks.thumbnail: 'Not Found'} alt="" /></figure>
                 <div className="card-body text-center">
                     <h2 className="card-title justify-center font-bold">{volumeInfo.title}</h2>
                     <p>{volumeInfo.authors}</p>
@@ -29,7 +29,7 @@ const SingleChar = (props) => {
                 </div>
             </div>
             {
-                modalData && <Modal modalData={modalData}></Modal>
+                modalData && <Modal modalData={modalData} setModal={setModal}></Modal>
             }
         </div>
     );
