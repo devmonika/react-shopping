@@ -4,9 +4,9 @@ import Modal from '../Modal/Modal';
 
 const SingleChar = (props) => {
     const [modalData, setModal] = useState({});
-    // console.log(props);
+    // console.log(modalData);
     const {movie, countIncrease} = props;
-    // console.log(movie);
+    console.log(movie);
     const {volumeInfo} = movie;
     return (
         <div className=''>
@@ -21,15 +21,16 @@ const SingleChar = (props) => {
                     <div className="card-actions justify-center">
                     <button onClick={() => countIncrease()} className="btn btn-warning">Add to Cart</button>
                     <label onClick={()=>setModal(movie)} htmlFor="my-modal-3" className="btn modal-button btn-error w-1/3">Detailes</label>
-                    {
-                        modalData && <Modal data={modalData} setModal= {setModal}></Modal>
-                    }
+                    
                     
                     </div>
                     
                     
                 </div>
             </div>
+            {
+                modalData && <Modal modalData={modalData}></Modal>
+            }
         </div>
     );
 };
