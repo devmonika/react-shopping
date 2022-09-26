@@ -16,15 +16,15 @@ module.exports = {
                 
         "neutral": "#20262D",
                 
-        "base-100": "#FFFFFF",
+        "base-100": "#2F3E60",
                 
         "info": "#53ABEE",
                 
         "success": "#0C5F42",
                 
-        "warning": "#F9D158",
+        "warning": "#60CAF0",
                 
-        "error": "#F56866",
+        "error": "#24A899",
         },
       },
     ],
